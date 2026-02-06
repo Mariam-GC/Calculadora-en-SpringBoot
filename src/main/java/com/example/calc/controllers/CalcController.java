@@ -7,6 +7,7 @@ import java.util.Map;
 @RestController
 public class CalcController {
     //Mostrar el reultado con PathVariable
+    //{operation} al poner las llaves en la palabra operation, nos dice que es un valor cambiante, al igual pasa en {num1} y en {num2}
     @GetMapping("/calculator/{operation}/{num1}/{num2}")
     public String calcPath(@PathVariable String operation,
                            @PathVariable double num1,
